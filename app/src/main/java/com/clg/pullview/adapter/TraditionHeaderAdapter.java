@@ -1,4 +1,4 @@
-package com.clg.pullview;
+package com.clg.pullview.adapter;
 
 import android.content.Context;
 import android.graphics.drawable.AnimationDrawable;
@@ -8,7 +8,8 @@ import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.clg.pullview.adapter.BaseHeaderAdapter;
+import com.clg.pullrefreshlibrary.adapter.BaseHeaderAdapter;
+import com.clg.pullview.R;
 
 public class TraditionHeaderAdapter extends BaseHeaderAdapter {
     private ImageView pull_to_refresh_image;

@@ -14,10 +14,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.clg.pullview.adapter.BaseHeaderAdapter;
-import com.clg.pullview.adapter.InitBaseFooterAdapter;
-import com.clg.pullview.adapter.InitBaseHeaderAdapter;
-import com.clg.pullview.interfaces.OnHeaderRefreshListener;
+import com.clg.pullrefreshlibrary.PullRefreshView;
+import com.clg.pullrefreshlibrary.interfaces.OnHeaderRefreshListener;
+import com.clg.pullview.adapter.TraditionFooterAdapter;
+import com.clg.pullview.adapter.TraditionHeaderAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         System.loadLibrary("native-lib");
     }
 
-    PullView pullView;
+    PullRefreshView pullView;
     RecyclerView recyclerView;
     private List<String> datas;
     @Override
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
         pullView.setOnHeaderRefreshListener(new OnHeaderRefreshListener() {
             @Override
-            public void onHeaderRefresh(PullView view) {
+            public void onHeaderRefresh(PullRefreshView view) {
 
                 new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                     @Override

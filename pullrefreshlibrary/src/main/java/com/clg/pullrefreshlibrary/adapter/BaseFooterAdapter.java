@@ -1,4 +1,4 @@
-package com.clg.pullview.adapter;
+package com.clg.pullrefreshlibrary.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

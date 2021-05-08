@@ -1,7 +1,6 @@
-package com.clg.pullview.adapter;
+package com.clg.pullrefreshlibrary.adapter;
 
 import android.content.Context;
-import android.os.IInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 

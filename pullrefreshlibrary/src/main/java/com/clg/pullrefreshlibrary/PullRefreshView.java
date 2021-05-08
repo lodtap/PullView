@@ -1,4 +1,4 @@
-package com.clg.pullview;
+package com.clg.pullrefreshlibrary;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -13,17 +13,18 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.clg.pullview.adapter.BaseFooterAdapter;
-import com.clg.pullview.adapter.BaseHeaderAdapter;
-import com.clg.pullview.adapter.InitBaseFooterAdapter;
-import com.clg.pullview.adapter.InitBaseHeaderAdapter;
-import com.clg.pullview.interfaces.OnFooterRefreshListener;
-import com.clg.pullview.interfaces.OnHeaderRefreshListener;
-import com.clg.pullview.util.MeasureTools;
+import com.clg.pullrefreshlibrary.adapter.BaseFooterAdapter;
+import com.clg.pullrefreshlibrary.adapter.BaseHeaderAdapter;
+import com.clg.pullrefreshlibrary.adapter.InitBaseFooterAdapter;
+import com.clg.pullrefreshlibrary.adapter.InitBaseHeaderAdapter;
+import com.clg.pullrefreshlibrary.interfaces.OnFooterRefreshListener;
+import com.clg.pullrefreshlibrary.interfaces.OnHeaderRefreshListener;
+import com.clg.pullrefreshlibrary.util.MeasureTools;
 
-public class PullView extends LinearLayout {
 
-    private static final String TAG = PullView.class.getSimpleName();
+public class PullRefreshView extends LinearLayout {
+
+    private static final String TAG = PullRefreshView.class.getSimpleName();
     //上拉还是下拉
     private static final int PULL_UP_STATE = 0;//上拉
     private static final int PULL_DOWN_STATE = 1;//下拉
@@ -57,15 +58,15 @@ public class PullView extends LinearLayout {
 
     private Context mContext;
 
-    public PullView(Context context) {
+    public PullRefreshView(Context context) {
         this(context, null);
     }
 
-    public PullView(Context context, @Nullable AttributeSet attrs) {
+    public PullRefreshView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public PullView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public PullRefreshView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context);
     }

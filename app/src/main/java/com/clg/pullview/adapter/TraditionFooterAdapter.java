@@ -1,4 +1,4 @@
-package com.clg.pullview;
+package com.clg.pullview.adapter;
 
 import android.content.Context;
 import android.view.View;
@@ -8,7 +8,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.clg.pullview.adapter.BaseFooterAdapter;
+import com.clg.pullrefreshlibrary.adapter.BaseFooterAdapter;
+import com.clg.pullview.R;
 
 public class TraditionFooterAdapter extends BaseFooterAdapter {
     private ProgressBar pull_to_load_progress;

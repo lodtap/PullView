@@ -1,11 +1,12 @@
-package com.clg.pullview.adapter;
+package com.clg.pullrefreshlibrary.adapter;
 
 import android.content.Context;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.clg.pullview.R;
+import com.clg.pullrefreshlibrary.R;
+
 
 public class InitBaseFooterAdapter extends BaseFooterAdapter{
 
